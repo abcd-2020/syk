@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>버튼클릭하면 답이 보이게 작성</title>
+<script>
+function addAnswer(obj, text){
+var parent = obj.parentElement.parentElement;
+var newDiv = document.createElement("div");
+newDiv.innerHTML = text;
+newDiv.style.color = "blue";
+newDiv.onclick = function(){
+var p = this.parentElement;
+p.removeChild(this);
+};
+parent.appendChild(newDiv);
+}
+
+</script>
+</head>
+<body>
+<div>
+....................................................................<br>
+Q. 거울아 거울아 세상에서 누가 제일 예쁘니?<br>
+<p>
+<button onclick="addAnswer(this,'누구죠?' )" >답</button>
+</p>
+</div>
+<div>
+....................................................................<br>
+Q. 죽느냐 사는냐 어떤 것이 문제인가?<br>
+<p>
+<button onclick="addAnswer(this,'살아야죠')">답</button>
+</p>
+</div>
+</body>
+</html>

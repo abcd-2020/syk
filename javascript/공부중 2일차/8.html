@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>스타일 응용한 홈페이지디자인</title>
+ <style>
+
+.parent{
+	margin-right:auto;
+            margin-left:auto;
+    	width : 1000px;
+	height :100px;
+    
+}
+
+.first1 {
+    float: left;
+margin : 5px;
+   width : 155px;
+	height : 70px;
+    padding : 10px;
+    border : 5px solid lightgray;
+background-image : url("news1.png");
+background-repeat : no-repeat;
+ background-position : center center;
+}
+
+.first2{
+float: left;
+margin : 5px;
+   width : 155px;
+	height : 70px;
+    padding : 10px;
+    border : 5px solid lightgray;
+background-image : url("news2.png");
+background-repeat : no-repeat;
+ background-position : center center;
+}
+
+.first3{
+float: left;
+margin : 5px;
+    width : 155px;
+	height : 70px;
+    padding : 10px;
+    border : 5px solid lightgray;
+background-image : url("news3.png");
+background-repeat : no-repeat;
+ background-position : center center;
+}
+.first4{
+float: left;
+margin : 5px;
+    width : 155px;
+	height : 70px;
+    padding : 10px;
+    border : 5px solid lightgray;
+background-image : url("news4.png");
+background-repeat : no-repeat;
+ background-position : center center;
+}
+.first5{
+float: left;
+margin : 5px;
+    width : 155px;
+	height : 70px;
+    padding : 10px;
+    border : 5px solid lightgray;
+background-image : url("news5.png");
+background-repeat : no-repeat;
+ background-position : center center;
+}
+.second1 {
+float: left;
+margin : 5px;
+   width : 155px;
+	height : 70px;
+    padding : 10px;
+    border : 5px solid lightgray;
+background-image : url("news6.png");
+background-repeat : no-repeat;
+ background-position : center center;
+}
+
+.second2 {
+float: left;
+margin : 5px;
+    width : 155px;
+	height : 70px;
+    padding : 10px;
+    border : 5px solid lightgray;
+background-image : url("news7.png");
+background-repeat : no-repeat;
+ background-position : center center;
+}
+
+.second3 {
+float: left;
+margin : 5px;
+   width : 155px;
+	height : 70px;
+    padding : 10px;
+    border : 5px solid lightgray;
+background-image : url("news8.png");
+background-repeat : no-repeat;
+ background-position : center center;
+}
+.second4{
+float: left;
+margin : 5px;
+    width : 155px;
+	height : 70px;
+    padding : 10px;
+    border : 5px solid lightgray;
+background-image : url("news9.png");
+background-repeat : no-repeat;
+ background-position : center center;
+}
+.second5{
+float: left;
+margin : 5px;
+    width : 155px;
+	height : 70px;
+    padding : 10px;
+    border : 5px solid lightgray;
+background-image : url("news10.png");
+background-repeat : no-repeat;
+ background-position : center center;
+}
+.login{
+float: left;
+margin : 3px;
+   width : 50px;
+	height : 20px;
+    
+    border : 1px solid lightgray;
+
+}
+function login(){
+document.write("로그인되었습니다");
+
+}
+
+.menu div {
+float:left;
+margin-right:auto;
+            margin-left:auto;
+width:100px;
+ text-align:center;
+}
+.menu div: after{
+content:" | ";
+font-size:12px;
+position: absolute;
+right:0px;
+top:2px;
+}
+.menu div: last-child: after{
+display:none;
+}
+h3 {
+	font:  bold 30px consolas, sans-serif;
+}
+.p1 { 
+	font-size:0.5em;
+	text-indent : 10em; /* 7 글자 들여쓰기 */
+} 
+.p2 { 
+	float: left;
+} 
+span { 
+	
+	font-size:2.5em;
+} 
+.head{  
+float: left;  
+margin-left : 100px;
+   width : 200px;
+	height : 200px;
+    padding : 10px;
+    border : 5px solid lightgray;
+background-image : url("head.png");
+background-repeat : no-repeat;
+ background-position : center center;
+}
+.headtext{ 
+margin-left : 50px;
+float: left;
+}
+.politics {    
+margin-left : 100px;
+float: left;
+   width : 200px;
+	height : 200px;
+    padding : 10px;
+    border : 5px solid lightgray;
+background-image : url("politics.png");
+background-repeat : no-repeat;
+ background-position : center center;
+}
+.politicstext{ 
+margin-left : 50px;
+float: left;
+}
+.economy {    
+margin-left : 100px;
+float: left;
+   width : 200px;
+	height : 200px;
+    padding : 10px;
+    border : 5px solid lightgray;
+background-image : url("economy.png");
+background-repeat : no-repeat;
+ background-position : center center;
+}
+.economytext{ 
+margin-left : 50px;
+float: left;
+}
+</style>
+ </head>
+<body><div>
+<h3>뉴스검색</h3>
+<button onclick="login()">로그인</button>
+<div class = "login"> </div><div class = "login"> </div>
+</div>
+<hr>
+<div class="menu">
+        <div ><strong>뉴스</strong></div>
+        <div ><strong>속보</strong></div>
+        <div ><strong>정치</strong></div>
+        <div ><strong>경제</strong></div>
+        <div ><strong>사회</strong></div>
+        <div ><strong>생활/문화</strong></div>
+         <div ><strong>세계</strong></div>
+        <div ><strong>IT/과학</strong></div>
+        <div ><strong>오피니언</strong></div>
+        <div ><strong>포토</strong></div>
+        <div ><strong>뉴스랭킹</strong></div>
+</div><br>
+<hr >
+
+
+<div class="parent">
+        <div class="first1"></div>
+        <div class="first2"></div>
+        <div class="first3"></div>
+        <div class="first4"></div>
+        <div class="first5"></div>
+     </div><br>
+<div class="parent">
+        <div class="second1"></div>
+        <div class="second2"></div>
+        <div class="second3"></div>
+         <div class="second4"></div>
+          <div class="second5"></div>
+    </div><br>
+<hr width = "85%">
+<p class="p1" ><span>헤드라인 뉴스</span>    헤드라인뉴스와 각 기사묶음 타이틀은 기사내용을 기반으로 자동추출됩니다.</p>
+<div class="head"></div>
+<div class="headtext">
+국회 법사위는 이날 오전 전체회의에서<br>
+ '김명수 대법원장 국회 출석 요구의 건'을<br>
+ 추가하는 의사일정 변경안 표결을 실시했지만 부결 처리했다.<br> 
+국민의힘 의원들은 민주당 의원들의 반대로 김 대법원장 <br>
+출석요구가 관철되지 못하자 회의장에서 퇴장했다.
+</div>
+<hr width = "85%">
+<p class="p1" ><span>정치</span>   정치뉴스입니다.</p>
+<div class="politics"></div>
+<div class="politicstext">
+정부 소식통은 17일 “전날 고성지역 해안가에서<br> 
+잠수복과 오리발이 발견된 것으로 안다”며 <br>
+“동해 민간인통제선(민통선) 검문소 일대에서 <br>
+신병을 확보한 남성이 착용했을 가능성을 조사 중”이라고 밝혔다.
+</div>
+<hr width = "85%">
+<p class="p1" ><span>경제</span>    경제뉴스입니다.</p>
+<div class="economy"></div>
+<div class="economytext">
+중기부는 17일 오후 2시 서울 여의도 중소기업중앙회를 찾아 <br>
+업종별 중소기업협동조합 이사장 등 중소기업 관계자들과 함께 <br>
+코로나 위기 극복을 위한 ‘중소기업계 간담회’를 개최했다. <br>
+이번 간담회는 권칠승 장관 취임 이후 중소기업계와의 첫 만남이다.
+</div>
+</body>
+</html>

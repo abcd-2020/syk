@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>태그 사용 문장 모양 바꾸기</title>
+<script>
+
+function changeP(){
+var spanArray = document.getElementsByTagName("p");
+	for(var i=0; i<spanArray.length; i++) {
+		var span = spanArray[i];
+		span.style.color = "red";
+		span.style.fontSize = "20px";
+}
+}
+function changeDiv(){
+var spanArray = document.getElementsByTagName("div");
+	for(var i=0; i<spanArray.length; i++) {
+		var span = spanArray[i];
+		span.style.color = "yellow";
+		span.style.fontSize = "20px";
+}
+}
+function changeSpan(){
+	var spanArray = document.getElementsByTagName("span");
+	for(var i=0; i<spanArray.length; i++) {
+		var span = spanArray[i];
+		span.style.color = "orchid";
+		span.style.fontSize = "20px";
+}
+}
+</script>
+</head>
+<body>
+<h3> 태그 사용 문장 모양 바꾸기</h3>
+<button onclick="changeP()">누르세요</button>
+<button onclick="changeDiv()">누르세요</button>
+<button onclick="changeSpan()">누르세요Span</button><hr>
+
+<div>
+이 <span>노래는</span> 유명해지지 않았으면 해<br>
+이 <span>노래는</span> 유명해지지 않았으면 해<br>
+<p>사람들이 가사를 못 외웠으면 해</p>
+에라라라라 에베베베 에베베베<br>
+
+일주일 전 욕조에서<br>
+나 혼자 흥얼거리던<span> 노래</span><br>
+<p>이제는 너 혼자 듣고 있고</p>
+<p>곧 사람들도 듣게 되겠지</p>
+
+피아노 하나로는 심심해<br>
+베이스도 넣게 되었지<br>
+하루 종일 널 생각하다 쓴 노래<br>
+<p>별 내용은 없지만</p>
+<p>그냥 내 마음이다 생각하고 들어줬으면</p>	
+</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>정수출력</title>
+<script>
+function pr(msg,arr){
+document.write(msg + arr.toString() + "<br>");
+}
+</script>
+</head>
+<body>
+<h3> 정수출력</h3>
+<script>
+var array = new Array();
+var n;
+
+for ( i=0; i<7; i++){
+ n = prompt("정수를 입력하세요");
+array[i] = n;
+}
+var c = array.reverse();
+pr("반대로출력",c);
+var c = array.sort();
+pr("정렬후출력",c);	
+</script>
+</body>
+</html>

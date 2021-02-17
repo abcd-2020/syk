@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>2차 방정식의 근 구하기</title>
+</head>
+<body>
+	<h3>2차 방정식<img src="img/expression.png" alt="이미지"></h3>
+	<script>
+		function expression(){
+			var a = prompt("2차 계수 값을 입력하세요.");
+			var a1 = parseInt(a)
+			var b = prompt("1차 계수 값을 입력하세요.");
+			var b1 = parseInt(b)
+			var c = prompt("상수항 값을 입력하세요.");
+			var c1 = parseInt(c)
+			var result1 = ((-b1 + Math.sqrt(b1*b1-4*a1*c1))/2*a1).toPrecision(5);
+			var result2 = ((-b1 - Math.sqrt(b1*b1-4*a1*c1))/2*a1).toPrecision(5);
+			var confirm = Math.sqrt(b1*b1-4*a1*c1);
+			if(a1=0){
+				alert("2차 방정식이 아님");
+			}else if(confirm<0){
+				alert("근 없음");
+			}else if(confirm==0){
+				alert("중근 "+result1);
+			}else{
+				alert("서로 다른 두 실근: "+result1+", "+result2);
+			}
+		}
+	</script>
+	<button onclick="expression()">2차방정식 근 구하기</button>
+</body>
+</html>

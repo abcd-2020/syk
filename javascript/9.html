@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>다른색상의박스출력</title>
+<style>
+div { display: inline-block; width:50px; padding:50px; }
+</style>
+</head>
+<body>
+<h3> 다른색상의박스출력</h3><hr>
+<script>
+for(i=0; i<4; i++){
+for(j=0; j<4; j++){
+	var r = Math.floor(Math.random()*256);
+	var g = Math.floor(Math.random()*256);
+	var b = Math.floor(Math.random()*256);
+	document.write('<div style = "background-color:rgb('+r+','+g+','+b+')"></div>');
+}
+document.write("<br>");
+}
+ 
+</script>
+</body>
+</html>

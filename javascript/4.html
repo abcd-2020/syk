@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>몸무게 총합과 평균</title>
+</head> 
+<body>
+<h3>몸무게 총합과 평균</h3><hr>
+<script>
+var n = prompt("인원수를 입력하세요");
+var m = parseInt(n);
+
+var arr = new Array();
+var n1;
+var m1;
+var sum = 0;
+for ( i=0; i<m; i++){
+n1 = prompt("몸무게를 입력하세요")
+m1 = parseInt(n1);
+arr[i] = m1;
+sum += arr[i];
+}
+document.write("인원수 : "+ m + "<br>");
+document.write("몸무게총합 : "+ sum+ "<br>"); 
+document.write("몸무게평균 : "+ sum/m+ "<br>"); 
+
+</script>
+</body>
+</html>

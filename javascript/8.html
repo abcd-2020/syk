@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>책3권 객체 3가지방법으로생성</title>
+
+<script>
+function money(){return this.price;}
+function amount(){return this.quan;}
+function totalprice(num){this.price*=num;}
+function addquan(num){this.quan-=num; }
+
+var book1 = new Object();
+book1.name = "키다리아저씨";
+book1.price=1000;
+book1.quan = 50;
+book1.totalprice = totalprice;
+book1.addquan = addquan;
+book1.money=money;
+book1.amount = amount;
+</script>
+
+
+<script>
+var book2 = {
+name : "어린왕자",
+price : 2000,
+quan : 70,
+
+money : function (){return this.price;},
+amount : function (){return this.quan;},
+totalprice : function (num){this.price*=num;},
+addquan : function (num){this.quan-=num; }
+
+};
+</script>
+
+<script>
+function Book3(name, price, quan){
+this.name = name;
+this.price = price;
+this.quan = quan;
+
+this.money = function (){return this.price;}
+this.amount = function (){return this.quan;}
+this.totalprice = function (num){this.price*=num;}
+this.addquan = function (num){this.quan-=num; }
+}
+</script>
+
+</head>
+<body>
+<h3>new Object()로 사용자 객체 만들기</h3>
+<hr>
+<script>
+document.write("new Object() 사용" + "<br>");
+document.write("book1 : " + "<br>");
+document.write("책제목 :" + book1.name + ", " + "<br>");
+document.write("책가격:" + book1.price + ", " + "<br>");
+document.write("책수량:" + book1.quan + ", " + "<br>");
+
+book1.totalprice(10);//10권 산다는가정
+document.write(book1.name + " 10권 사면 총금액은" +book1.money() +"원" +  "<br>" );
+book1.addquan(10);
+document.write(book1.name + " 10권 사면 남은 책은" +book1.amount() + "권"+ "<br>" );
+
+</script>
+
+<h3>리터럴 표기법으로 사용자 객체 만들기</h3>
+<hr>
+<script>
+document.write("리터럴 표기법 사용" + "<br>");
+document.write("book2 : " + "<br>");
+document.write("책제목 :" + book2.name + ", " + "<br>");
+document.write("책가격:" + book2.price + ", " + "<br>");
+document.write("책수량:" + book2.quan + ", " + "<br>");
+
+book2.totalprice(10);//10권 산다는가정
+document.write(book2.name + "10권 사면 총금액은" +book2.money() +"원" +  "<br>" );
+book2.addquan(10);
+document.write(book2.name + "10권 사면 남은 책은" +book2.amount() + "권"+ "<br>" );
+</script>
+
+<h3>프로토타입으로 사용자 객체 만들기</h3>
+<hr>
+<script>
+var book3 = new Book3("맛있는요리책",3000,20);
+
+document.write("프로토타입 사용" + "<br>");
+document.write("book3 : " + "<br>");
+document.write("책제목 :" + book3.name + ", " + "<br>");
+document.write("책가격:" + book3.price + ", " + "<br>");
+document.write("책수량:" + book3.quan + ", " + "<br>");
+
+book3.totalprice(10);//10권 산다는가정
+document.write(book3.name + "10권 사면 총금액은" +book3.money() +"원" +  "<br>" );
+book3.addquan(10);
+document.write(book3.name + "10권 사면 남은 책은" +book3.amount() + "권"+ "<br>" );
+</script>
+</body>
+</html>
+

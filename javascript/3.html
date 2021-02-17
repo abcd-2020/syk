@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>일주일중 수업인날</title>
+</head>
+<body>
+	<h3>일주일중 수업인날</h3><hr>
+	<script>
+	function holiday(){
+	var day = prompt("월,화,수,목,금,토,일 중 하루 입력")
+	switch(day){
+	case "월":case "화":case "수":case "목":case "금":
+	document.write("수업")
+	break;
+	case "토":case "일":
+	document.write("휴일");
+	break;
+	}
+	}
+	holiday();
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,25 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>*문자포함 분할출력</title>
+<script>
+function pr(msg,arr){
+document.write(msg + arr.toString() + "<br>");
+}
+</script>
+</head>
+<body>
+<h3> *문자포함 분할출력</h3><hr>
+<script>
+var char = prompt("*을 포함하여 문자열을 입력")
+var sub = char.split("*");
+document.write("*기준으로 분리<br>");
+for(i=0; i<sub.length; i++){
+document.write(sub[i]+"<br>");
+}
+</script>
+</body>
+</html>
